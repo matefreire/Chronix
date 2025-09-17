@@ -5,5 +5,64 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": ["source.fixAll.eslint"],
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Configurações de exclusão de arquivos para melhor performance
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.quasar": true,
+    "**/coverage": true,
+    "**/.nyc_output": true,
+    "**/pnpm-lock.yaml": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.vscode/settings.json": false
+  },
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.quasar": true,
+    "**/coverage": true,
+    "**/.nyc_output": true,
+    "**/pnpm-lock.yaml": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/.git": true,
+    "**/public/favicon.ico": true,
+    "**/public/icons": true
+  },
+
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/.quasar/**": true,
+    "**/coverage/**": true,
+    "**/.nyc_output/**": true,
+    "**/pnpm-lock.yaml": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/.git/**": true
+  },
+
+  // Configurações adicionais para melhor performance
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  "typescript.suggest.autoImports": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.suggest.autoImports": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+
+  // Configurações de arquivos
+  "files.associations": {
+    "*.vue": "vue"
+  },
+
+  // Configurações específicas do Vue
+  "vetur.validation.template": false,
+  "vetur.validation.script": false,
+  "vetur.validation.style": false
 }

@@ -1,0 +1,12 @@
+{
+  "name": "chronix",
+  "version": "0.0.1",
+  "description": "An app to track productivity hours and monitor progress toward meeting the monthly production bonus target",
+  "author": "Mateus Freire <matefreire@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  }
+}

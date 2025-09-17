@@ -1,0 +1,6 @@
+rules:
+  - match: 'COMMIT_MESSAGE'
+    instruction: |
+      Sempre use Conventional Commits no formato da primeira linha como abaixo e no restante que tenha uma descrição detalhada:
+      <type>(<scope>): <description>
+      Tipos: feat, fix, docs, style, refactor, test, chore
